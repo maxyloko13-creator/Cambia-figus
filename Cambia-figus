@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambia Figus App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root { --primary: #2d0a0a; --accent: #facc15; }
+        body { font-family: sans-serif; background: #f8fafc; margin: 0; }
+        .btn-gold { background: var(--accent); color: var(--primary); font-weight: 900; }
+    </style>
+</head>
+<body>
+    <div id="landing" class="p-10 text-center">
+        <h1 class="text-4xl font-black text-[#2d0a0a]">CAMBIA FIGUS</h1>
+        <p class="mt-4 text-slate-600">La app gratuita de canje.</p>
+        <button onclick="document.getElementById('app').style.display='block';this.parentElement.style.display='none'" class="btn-gold mt-6 px-8 py-4 rounded-2xl">ABRIR APP</button>
+    </div>
+
+    <div id="app" style="display:none" class="max-w-md mx-auto bg-white min-h-screen shadow-xl">
+        <header class="p-5 border-b flex justify-between items-center bg-white sticky top-0">
+            <span class="font-black italic text-[#2d0a0a]">CAMBIA FIGUS</span>
+            <span class="bg-slate-100 px-3 py-1 rounded-full text-xs font-bold">150 Coins</span>
+        </header>
+        <div class="p-6 text-center">
+            <h2 class="text-2xl font-black italic">MI ÁLBUM</h2>
+            <div class="grid grid-cols-3 gap-2 mt-6">
+                <div class="aspect-square bg-slate-100 rounded-lg flex items-center justify-center">1</div>
+                <div class="aspect-square bg-yellow-400 rounded-lg flex items-center justify-center font-bold">2</div>
+                <div class="aspect-square bg-slate-100 rounded-lg flex items-center justify-center">3</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
